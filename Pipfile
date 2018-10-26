@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+matplotlib = "*"
+pytest = "*"
+pytest-xdist = "*"
+pytest-cov = "*"
+tox = "*"
+tox-pipenv = "*"
+
+[dev-packages]
+pytest = "*"
+pytest-xdist = "*"
+pytest-cov = "*"
+tox = "*"
+tox-pipenv = "*"
