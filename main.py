@@ -17,6 +17,7 @@ if __name__ == "__main__":
         "--figure_name",
         dest='figure_name',
         type=str,
+        help='Name of an initial pattern of life to populate the universe',
         choices=['10_cells_row','infinite','6_cells','bird']
     )
     parser.add_argument(
