@@ -1,0 +1,25 @@
+-i https://pypi.org/simple
+apipkg==1.5
+appdirs==1.4.3
+atomicwrites==1.2.1
+attrs==18.2.0
+black==18.9b0
+certifi==2018.10.15
+click==7.0
+coverage==5.0a4
+execnet==1.5.0
+filelock==3.0.10
+more-itertools==4.3.0
+pipenv==2018.11.26
+pluggy==0.8.0
+py==1.7.0
+pytest-cov==2.6.0
+pytest-forked==0.2
+pytest-xdist==1.24.1
+pytest==4.0.1
+six==1.11.0
+toml==0.10.0
+tox-pipenv==1.8.0
+tox==3.5.3
+virtualenv-clone==0.4.0
+virtualenv==16.1.0

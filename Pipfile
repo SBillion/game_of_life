@@ -5,12 +5,6 @@ name = "pypi"
 
 [packages]
 matplotlib = "*"
-pytest = "*"
-pytest-xdist = "*"
-pytest-cov = "*"
-tox = "*"
-tox-pipenv = "*"
-black = "*"
 
 [dev-packages]
 pytest = "*"
@@ -18,3 +12,7 @@ pytest-xdist = "*"
 pytest-cov = "*"
 tox = "*"
 tox-pipenv = "*"
+black = "*"
+
+[pipenv]
+allow_prereleases = true
