@@ -97,5 +97,11 @@ optional arguments:
   --iterations ITERATIONS Number of universe iteration
 ```
  
+## Tests
 
+To launch all the test just do:
+
+```bash
+tox
+```
  
