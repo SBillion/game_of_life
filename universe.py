@@ -24,7 +24,7 @@ class Universe:
         ],
     }
 
-    def __init__(self, size=100, figure_name=None, figure_position=None, iterations=100):
+    def __init__(self, size=100, figure_name=None, figure_position=None, iterations=50):
         """
         Initialize the Universe with living cells
         :param size: Size of the universe
