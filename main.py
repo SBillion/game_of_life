@@ -17,7 +17,7 @@ if __name__ == "__main__":
         "--figure_name",
         dest='figure_name',
         type=str,
-        choices=['10_cells_row']
+        choices=['10_cells_row','infinite','6_cells','bird']
     )
     parser.add_argument(
         "--figure_position",
@@ -25,7 +25,17 @@ if __name__ == "__main__":
         help='Top left corner coordinates of the figure in the universe. 2 '
              'numbers seperates by a coma'
     )
+    parser.add_argument(
+        "--iterations",
+        dest='iterations',
+        default=50,
+        type=int,
+        help='Number of universe iterations'
+    )
     args = parser.parse_args()
-    figure_position = list(args.figure_position.split(','))
-
-    universe = Universe(args.size, args.figure_name, figure_position)
+    try:
+        figure_position = [ int(i) for i in args.figure_position.split(',')]
+    except AttributeError:
+        figure_position=None
+    universe = Universe(args.size, args.figure_name, figure_position, args.iterations)
+    universe.animate()
